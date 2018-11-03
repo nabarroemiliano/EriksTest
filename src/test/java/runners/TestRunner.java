@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/main/java/functionalTest",
 		glue = {"stepDefinitions"},
-		plugin = { "pretty" ,  "junit:target/cucumber-reports/Cucumber.xml" },
+		plugin = { "pretty" ,  "junit:target/cucumber-reports/Cucumber.json" },
 		monochrome = true
 		)
 
