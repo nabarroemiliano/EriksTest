@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="49.713911">
+<testcase classname="Automated product search result" name="Simple product search" time="49.713911">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#13;&#10;&#9;at stepDefinitions.Steps.check_if_the_product_LOCTITE_Loctite_GR_is_present_in_the_results(Steps.java:94)&#13;&#10;&#9;at ✽.Then check if the product 'LOCTITE&#9;Loctite&#9;4601-20&#9;GR' is present in the results(test.feature:29)&#13;&#10;"><![CDATA[When User open google.com...................................................passed
+And he search for 'shop	eriks	nl'...........................................passed
+And click on the result http://shop.eriks.nl................................passed
+And change the language to English..........................................passed
+And enter 'loctite' in the search input box.................................passed
+Then check if the product 'LOCTITE	Loctite	4601-20	GR' is present in the results.failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at stepDefinitions.Steps.check_if_the_product_LOCTITE_Loctite_GR_is_present_in_the_results(Steps.java:94)
+	at ✽.Then check if the product 'LOCTITE	Loctite	4601-20	GR' is present in the results(test.feature:29)
+]]></failure>
+</testcase>
+</testsuite>

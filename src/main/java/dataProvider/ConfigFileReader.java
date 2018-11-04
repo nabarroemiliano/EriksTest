@@ -48,4 +48,10 @@ public class ConfigFileReader {
 		else throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
 	
+	public String getProductNameToSearch() {
+		String productName = properties.getProperty("productName");
+		if(productName != null) return productName;
+		else throw new RuntimeException("product name not specified in the Configuration.properties file.");
+	}
+	
 }
